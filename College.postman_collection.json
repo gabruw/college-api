@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "a0b5f7ed-b0f5-4136-809a-fa2d5dd476ae",
+		"name": "College",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Aluno] Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/aluno/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"aluno",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Aluno] Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/aluno/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"aluno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Aluno] Include",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João\",\r\n    \"ano\": 2020,\r\n    \"matricula\": 12345\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/aluno/include",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"aluno",
+						"include"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Aluno] Edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"José\",\r\n    \"ano\": 2020,\r\n    \"matricula\": 12345\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/aluno/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"aluno",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Aluno] Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/aluno/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"aluno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Turma] Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/turma/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"turma",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Turma] Get by Id Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/turma/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"turma",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Turma] Include",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Artes\",\r\n    \"ano\": 2020,\r\n    \"ensino\": \"FUNDAMENTAL\",\r\n    \"alunos\": [\r\n        {\r\n            \"id\": 1,\r\n            \"nome\": \"João\",\r\n            \"ano\": 2020,\r\n            \"matricula\": 12345,\r\n            \"turma\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/turma/include",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"turma",
+						"include"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Turma] Edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Artes\",\r\n    \"ano\": 2020,\r\n    \"ensino\": \"FUNDAMENTAL\",\r\n    \"alunos\": [\r\n        {\r\n            \"id\": 2,\r\n            \"nome\": \"João\",\r\n            \"ano\": 2020,\r\n            \"matricula\": 12345,\r\n            \"turma\": null\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/turma/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"turma",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Turma] Remove Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/turma/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"turma",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
